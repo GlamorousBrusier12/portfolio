@@ -2,12 +2,9 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import electorent from "../../Assets/Projects/electorent.jpg";
+import smartsocial from "../../Assets/Projects/smartsocial.jpg";
+import policeWebsite from "../../Assets/Projects/policeWebsite.png";
 
 function Projects() {
   return (
@@ -24,7 +21,7 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={electorent}
               isBlog={false}
               title="Electorent"
               description="A web app for renting electronics. Built with Node, Express, MongoDB. Implemented CRUD, authentication, Docker, CI/CD. This summary captures the key technical aspects while keeping it short and to-the-point for a project card format."
@@ -35,7 +32,7 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={policeWebsite}
               isBlog={false}
               title="Police Website"
               description="A web app bridging the police and public. Allows citizens to file FIRs online and police to manage criminal database. Implemented CRUD, CI/CD. Tech: HTML, CSS, Node, Express, MongoDB, Docker."
@@ -46,7 +43,7 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={suicide}
+              imgPath={smartsocial}
               isBlog={false}
               title="Smart Social"
               description="A web app for people to interact. Used Google OAuth authentication. Implemented delayed jobs with Kue.js and Redis. Developed a REST API with CRUD. Tech: HTML, CSS, JS, Node, MongoDB, Redis."
